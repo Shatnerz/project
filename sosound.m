@@ -4,8 +4,8 @@
 %         error_Speed -- measurement error on speed of sound
 %         time -- data of time between trigger and echo
 
-function [speed,error_Speed,time]=sosound(handle,distance)
-clear all
+function [speed,error_Speed,avg_Time,error_Time]=sosound(handle,distance)
+clear time
 n=50; %number of data points
 
 time=[];

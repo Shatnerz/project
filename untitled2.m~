@@ -5,7 +5,7 @@ dist2=[];
 for i=1:50;
     dist(i)=distance(h);
     pause(0.5)
-    dist2(i)=round(echo_time(h) / 29.137529 / 2);
+    dist2(i)=echo_time(h) / 29.137529 / 2;
     pause(0.1)
 end
 
